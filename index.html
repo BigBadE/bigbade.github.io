@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BigBadE's Website</title>
+	<link href="styles.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+	      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik:wght@500&display=swap"
+	      rel="stylesheet" crossorigin="anonymous">
+	<!-- jQuery library but the right link-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<!-- Popper for carousel-->
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+	<script>
+		/**
+		 * Automatically replaces the header id with the header navbar,
+		 * and the footer id with the footer.
+		 * Prevents me having to write the same code on a bunch of pages.
+		 */
+		$(document).ready(function () {
+			$('#header').load('header.html');
+			$('#footer').load('footer.html')
+		});
+	</script>
+</head>
+<body>
+<div id="header"></div>
+<h1 class="centered">BigBadE</h1>
+<h2 class="centered">About Me</h2>
+<hr class="line">
+<p id="aboutme" class="centered">I'm a full-time student, perusing Computer Science courses.<br>
+	I'm active on <a href="https://github.com/BigBadE/">GitHub</a> (where the source of this website is!) and Discord
+	(Big_Bad_E#1446), <br>
+	as well as an active hater of stock code photographs and lime green terminals.<br>
+	I'm interested in CyberSecurity, Software Engineering, Web Design, and Game Development.<br>
+</p>
+<hr class="line">
+<!--TODO Use @media to make responsive-->
+<h2 class="centered"><strong>My Contributions</strong></h2>
+<div id="carousel-time" class="carousel slide" data-interval="false" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-time" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-time" data-slide-to="1"></li>
+		<li data-target="#carousel-time" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<p>First</p>
+		</div>
+		<div class="carousel-item">
+			<p>Second</p>
+		</div>
+		<div class="carousel-item">
+			<p>Third</p>
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#carousel-time" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carousel-time" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<hr class="line">
+<h2 class="centered"><strong>My Languages</strong></h2>
+<div class="row language-box">
+	<div class="square-box col-md-2 col-xs-4">
+		<div id="java" class="square-content"></div>
+	</div>
+	<div class="square-box col-md-2 col-xs-4">
+		<div id="groovy" class="square-content"></div>
+	</div>
+	<div class="square-box col-md-2 col-xs-4">
+		<div id="html5" class="square-content"></div>
+	</div>
+	<div class="square-box col-md-2 col-xs-4">
+		<div id="bootstrap" class="square-content"></div>
+	</div>
+	<div class="square-box col-md-2 col-xs-4">
+		<div id="python" class="square-content"></div>
+	</div>
+	<div class="square-box col-md-2 col-xs-4">
+		<div id="c-sharp" class="square-content"></div>
+	</div>
+</div>
+<hr class="line">
+<h2 class="centered"><strong>My Favorite Tools</strong></h2>
+<div id="footer"></div>
+<div class="container">
+	<div class="row my-4">
+		<div class="col-sm d-flex">
+			<div class="card shadow-sm flex-fill">
+				<img class="card-img-top" src="images/intellij.svg" alt="IntelliJ">
+				<div class="card-body parent">
+					<h5 class="card-title">JetBrains IDEA</h5>
+					<p class="card-text">A huge set of tools which supports a ton of things I use (MySQL/MongoDB, ANTLR,
+						Git,
+						etc...)
+						and supports a ton of different languages (I've used it with Java, css, JSON, python, HTML, and
+						React)</p>
+					<div class="text-center child">
+						<a href="https://www.jetbrains.com/" target="_blank" class="btn btn-primary">Homepage</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm d-flex">
+			<div class="card shadow-sm flex-fill">
+				<img class="card-img-top" src="images/codota.png" alt="Codota">
+				<div class="card-body parent">
+					<h5 class="card-title">Codota</h5>
+					<p class="card-text">It's a search engine for open-source projects, and the plugin provides
+						auto-complete
+						with an AI trained to your project. I've found it is a lot smarter than IntelliJ's builtin
+						auto-complete.</p>
+					<div class="text-center child">
+						<a href="https://www.codota.com/" target="_blank" class="btn btn-primary">Homepage</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm d-flex">
+			<div class="card shadow-sm flex-fill">
+				<img class="card-img-top" src="images/github.svg" alt="GitHub">
+				<div class="card-body parent">
+					<h5 class="card-title">GitHub</h5>
+					<p class="card-text">GitHub has git hosting, site hosting, a free CI, and GitHub student pack
+						provides
+						a ton of other free tools.</p>
+					<div class="text-center child">
+						<a href="https://www.github.com/" target="_blank" class="btn btn-primary">Homepage</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
