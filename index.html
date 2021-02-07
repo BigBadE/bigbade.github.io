@@ -34,118 +34,96 @@
 <h1 class="centered">BigBadE</h1>
 <h2 class="centered">About Me</h2>
 <hr class="line">
-<p id="aboutme" class="centered">I'm a full-time student, perusing Computer Science courses.<br>
+<p class="body-text centered">I'm a full-time student, perusing Computer Science courses.<br>
 	I'm active on <a href="https://github.com/BigBadE/">GitHub</a> (where the source of this website is!) and Discord
 	(Big_Bad_E#1446), <br>
 	as well as an active hater of stock code photographs and lime green terminals.<br>
 	I'm interested in CyberSecurity, Software Engineering, Web Design, and Game Development.<br>
 </p>
 <hr class="line">
-<!--TODO Use @media to make responsive-->
-<h2 class="centered"><strong>My Contributions</strong></h2>
+<h2 class="centered"><strong>My Contributions/Projects</strong></h2>
 <div id="carousel-time" class="carousel slide" data-interval="false" data-ride="carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#carousel-time" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-time" data-slide-to="1"></li>
-		<li data-target="#carousel-time" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<p>First</p>
+	<div class="container">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-time" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-time" data-slide-to="1"></li>
+			<li data-target="#carousel-time" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="container bordered">
+					<h1 class="centered">Cobertura</h1>
+					<p class="align-vertically body-text">Cobertura is a tool to calculate test coverage percentages and
+						verify Java code.
+						It is used by a few popular tools, most notably including CodeCov. Sadly, it was majorly out of
+						date
+						and didn't even verify Java 8 code correctly. I learned a source-code generating library called
+						JavaNCSS and updated it to the latest version.
+						<a href="https://github.com/cobertura/cobertura/pull/407" target="_blank">PR #407</a></p>
+					<br>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="container bordered">
+					<h1 class="centered">Clairvoyant</h1>
+					<p class="align-vertically body-text">
+						Clairvoyant is a WIP <a href="https://play.battlesnake.com" target="_blank">Battlesnake</a> that
+						implements Minimax with alpha-beta pruning. It's a heavy work in progress, as it's a difficult
+						thing to implement.
+						<a href="https://github.com/bigbade/clairvoyant" target="_blank">BigBadE/Clairvoyant</a></p>
+					<br>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="container bordered">
+					<h1 class="centered">JavaSkript</h1>
+					<p class="align-vertically body-text">
+						JavaSkript is a project meant to compile English text (written in the Skript standard) into
+						Java.
+						Still also a WIP, it has a fully functioning system to programmatically write a class file.
+						<a href="https://github.com/BigBadE/JavaSkript" target="_blank">BigBadE/JavaSkript</a></p>
+					<br>
+				</div>
+			</div>
 		</div>
-		<div class="carousel-item">
-			<p>Second</p>
-		</div>
-		<div class="carousel-item">
-			<p>Third</p>
-		</div>
+		<a class="carousel-control-prev left" href="#carousel-time" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next right" href="#carousel-time" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
-	<a class="carousel-control-prev" href="#carousel-time" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carousel-time" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
 </div>
 <hr class="line">
 <h2 class="centered"><strong>My Languages</strong></h2>
 <div class="row language-box">
-	<div class="square-box col-md-2 col-sm-4">
+	<div class="square-box col-lg-2 col-4">
 		<div id="java" class="square-content"></div>
 	</div>
-	<div class="square-box col-md-2 col-sm-4">
+	<div class="square-box col-lg-2 col-4">
 		<div id="groovy" class="square-content"></div>
 	</div>
-	<div class="square-box col-md-2 col-sm-4">
+	<div class="square-box col-lg-2 col-4">
 		<div id="html5" class="square-content"></div>
 	</div>
-	<div class="square-box col-md-2 col-sm-4">
+	<div class="square-box col-lg-2 col-4">
 		<div id="bootstrap" class="square-content"></div>
 	</div>
-	<div class="square-box col-md-2 col-sm-4">
+	<div class="square-box col-lg-2 col-4">
 		<div id="python" class="square-content"></div>
 	</div>
-	<div class="square-box col-md-2 col-sm-4">
+	<div class="square-box col-lg-2 col-4">
 		<div id="c-sharp" class="square-content"></div>
 	</div>
 </div>
 <hr class="line">
 <h2 class="centered"><strong>My Favorite Tools</strong></h2>
 <div id="footer"></div>
-<!--
 <div class="container">
-	<div class="row my-4">
-		<div class="col-sm d-flex">
-			<div class="card shadow-sm flex-fill">
-				<img class="card-img-top" src="images/intellij.svg" alt="IntelliJ">
-				<div class="card-body parent">
-					<h5 class="card-title">JetBrains IDEA</h5>
-					<p class="card-text">A huge set of tools which supports a ton of things I use (MySQL/MongoDB, ANTLR,
-						Git, etc...) and supports a ton of different languages
-						(I've used it with Java, css, JSON, python, HTML, and React)</p>
-					<div class="text-center child">
-						<a href="https://www.jetbrains.com/" target="_blank" class="btn btn-primary">Homepage</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm d-flex">
-			<div class="card shadow-sm flex-fill">
-				<img class="card-img-top" src="images/codota.png" alt="Codota">
-				<div class="card-body parent">
-					<h5 class="card-title">Codota</h5>
-					<p class="card-text">It's a search engine for open-source projects, and the plugin provides
-						auto-complete
-						with an AI trained to your project. I've found it is a lot smarter than IntelliJ's builtin
-						auto-complete.</p>
-					<div class="text-center child">
-						<a href="https://www.codota.com/" target="_blank" class="btn btn-primary">Homepage</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm d-flex">
-			<div class="card shadow-sm flex-fill">
-				<img class="card-img-top" src="images/github.svg" alt="GitHub">
-				<div class="card-body parent">
-					<h5 class="card-title">GitHub</h5>
-					<p class="card-text">GitHub has git hosting, site hosting, a free CI, and GitHub student pack
-						provides
-						a ton of other free tools.</p>
-					<div class="text-center child">
-						<a href="https://www.github.com/" target="_blank" class="btn btn-primary">Homepage</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
--->
-<div class="container">
-	<div class="card-deck mb-3 text-center">
-		<div class="card mb-4 shadow-sm">
+	<div class="card-deck text-center">
+		<div class="card mb-4 shadow">
 			<img class="card-img-top" src="images/intellij.svg" alt="IntelliJ">
 			<div class="card-body parent">
 				<h5 class="card-title">JetBrains IDEA</h5>
@@ -157,7 +135,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card mb-4 shadow-sm">
+		<div class="card mb-4 shadow">
 			<img class="card-img-top" src="images/codota.png" alt="Codota">
 			<div class="card-body parent">
 				<h5 class="card-title">Codota</h5>
@@ -170,7 +148,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card mb-4 shadow-sm">
+		<div class="card mb-4 shadow">
 			<img class="card-img-top" src="images/github.svg" alt="GitHub">
 			<div class="card-body parent">
 				<h5 class="card-title">GitHub</h5>
